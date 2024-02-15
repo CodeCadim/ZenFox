@@ -54,7 +54,6 @@ function createHTMLTab(tabData) {
     applyDataToTab(tab, tabData);
 
     tab.addEventListener("click", () => setActiveTab(tabData.id));
-    tab.addEventListener("contextmenu", (e) => openContextMenu(e, tabData));
 
     return tab;
 }
@@ -145,10 +144,6 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => updateTab(tab));
 
 browser.tabs.onMoved.addListener((tabId, moveInfo) => {
     moveExtensionTab(tabs[tabId], moveInfo.toIndex);
-});
-
-document.addEventListener("contextmenu", (e) => {
-    e.preventDefault();
 });
 
 loadWindowTabs();
