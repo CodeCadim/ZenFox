@@ -1,3 +1,5 @@
+![logo](assets/zenfox-repository-open-graph.png)      
+
 This is a fork of ArcFox intended to lover of minimalism.
 So, expect less features, less buttons and less functionnalities.
 
