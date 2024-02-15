@@ -9,23 +9,17 @@
     <script defer src="models/window-control.js"></script>
     <script defer src="models/browser-control.js"></script>
     <script defer src="models/search.js"></script>
-    <script defer src="models/tab-context-menu.js"></script>
     <script defer src="models/tabs.js"></script>
     <script defer src="models/folder.js"></script>
     <script defer src="models/dragging.js"></script>
 </head>
 <body>
 <div class="controls">
-    <nav class="window-control">
-        <button id="close-window">x</button>
-        <button id="minimize-window">-</button>
-        <button id="resize-window">+</button>
-        <button id="close-sidebar">#</button>
-    </nav>
+	<div class="logo">   </div>
     <nav class="browser-control">
-        <button id="previous-page"><</button>
-        <button id="next-page">></button>
-        <button id="refresh-page">@</button>
+        <button id="previous-page"></button>
+        <button id="next-page"></button>
+        <button id="refresh-page"></button>
     </nav>
 </div>
 <div class="search">
@@ -33,24 +27,13 @@
 </div>
 <div id="space-name" class="hidden">Elgem</div>
 <div id="folder-container" class="hidden"></div>
-<button id="new-tab">+ New Tab</button>
 <div id="tab-list"></div>
-<div id="tab-context-menu">
-    <button id="close">Close</button>
-    <button id="mute">Mute</button>
-    <button id="unmute">Unmute</button>
-    <button id="duplicate">Duplicate</button>
-    <button id="create-folder">Create Folder</button>
-    <button id="copy-link">Copy Link</button>
-    <button id="unload-tab">Unload Tab</button>
-</div>
 <template id="tab-template">
     <div class="tab" title="" data-id="" data-windowId="">
         <div class="infos">
             <img class="icon" draggable="false">
             <div data-type="name" class="name"></div>
         </div>
-        <button class="close">X</button>
     </div>
 </template>
 <template id="folder-template">

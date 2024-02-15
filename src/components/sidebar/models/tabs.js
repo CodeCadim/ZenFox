@@ -3,8 +3,6 @@ const tabs = {}
 const tabTemplate = document.getElementById("tab-template").content.cloneNode(true).querySelector(".tab");
 const tabList = document.getElementById("tab-list");
 
-const newTabButton = document.getElementById("new-tab");
-
 let windowID;
 
 function addTab(tabData) {
@@ -57,8 +55,6 @@ function createHTMLTab(tabData) {
 
     tab.addEventListener("click", () => setActiveTab(tabData.id));
     tab.addEventListener("contextmenu", (e) => openContextMenu(e, tabData));
-
-    tab.querySelector(".close").addEventListener("click", () => browser.tabs.remove(tabData.id));
 
     return tab;
 }
@@ -149,10 +145,6 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => updateTab(tab));
 
 browser.tabs.onMoved.addListener((tabId, moveInfo) => {
     moveExtensionTab(tabs[tabId], moveInfo.toIndex);
-});
-
-newTabButton.addEventListener("click", (e) => {
-    browser.tabs.create({active: !e.ctrlKey});
 });
 
 document.addEventListener("contextmenu", (e) => {
