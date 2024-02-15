@@ -1,12 +1,7 @@
+This is a fork of ArcFox intended to lover of minimalism.
+So, expect less features, less buttons and less functionnalities.
 
-![ZenFox Badge](assets/zenfox-repository-open-graph.png)
-
-This is a fork of ArcFox intended to minimalism's lovers.
-Expect fewer features, fewer buttons and fewer functionalities.
-
-![ZenFox Screenshot](assets/zenfox-screenshot.png)
-
-If you prefer the original that aims to resemble Arc Browser, project is here : https://github.com/betterbrowser/arcfox
+If you prefer the original that aims to ressemble Arc Browser, project is here : https://github.com/betterbrowser/arcfox
 
 # Installation
 
@@ -26,7 +21,8 @@ setting up your userChrome style :
 4. Drop your ["userChrome.css"](https://raw.githubusercontent.com/CodeCadim/ZenFox/main/themes/userChrome.css) file (from themes folder) into the "chrome" folder.
 5. Finally, restart Firefox for changes to take effect. Your customizations should now be live!
 
-# Uninstall
+# Removing ArcFox
+If you have a major issue, or just want a different/default look, here is how to remove ArcFox.
 
 1. Remove `(Firefox Profile)/chrome/userchrome.css`
 
@@ -36,8 +32,9 @@ setting up your userChrome style :
 
 # Donate to the original project
 
+# Donate to the original project
+
 Support ArcFox and BetterBrowser in a financial way : donate to the developer [ko-fi](https://ko-fi.com/nikollesan) page
 
 # License
-
-ZenFox is based on Arcfox, so it is also distributed under [MIT License](./LICENSE).
+ZenFox is based on Arcfox so it is also distributed under [MIT License](/LICENSE).
