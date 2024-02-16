@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "ZenFox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "https://github.com/CodeCadim",
   "description": "Firefox with a zen workflow.",
   "homepage_url": "https://github.com/CodeCadim/ZenFox",
