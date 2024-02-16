@@ -41,11 +41,5 @@
   "developer": {
     "name": "Brahim Hamdouni (CodeCadim)",
     "url": "https://github.com/CodeCadim"
-  },
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "zenfoxaddon@example.com",
-      "strict_min_version": "42.0"
-    }
   }
 }
