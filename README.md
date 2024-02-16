@@ -16,19 +16,15 @@ Use the official [Firefox Add-Ons store](https://addons.mozilla.org/firefox/addo
 
 ## Install theme
 
-For a fully immersive browsing experience, you'll want to incorporate a userChrome style into your Firefox profile.
+To get started with customizing your Firefox experience, you need to enable some settings via about:config. Navigate to it by typing "about:config"
+into the search bar of Firefox and set the value for "toolkit.legacyUserProfileCustomizations.stylesheets" to true. After that, we'll move on to
+setting up your userChrome style :
 
-To enable style modifications, simply follow these steps:
-
--    Open Firefox and type about:config into the search bar.
--    Locate "toolkit.legacyUserProfileCustomizations.stylesheets" and set its value to "true".
-
-Next, let's integrate the userChrome file into the appropriate directory:
-
--    Type about:support into the Firefox search bar and click on the "Open Folder" button next to "Profile Folder".
--    If you don't already have a folder named "chrome" within the profile folder, create one.
--    Within the "chrome" folder, place the "userChrome.css" file (found in the theme folder).
--    Restart Firefox to apply the changes.
+1. Open your Firefox configurations by searching for "about:support".
+2. Click on the "Open Folder" button next to "Profile Folder" to open it.
+3. In this folder, look for a folder named "chrome". If you don't find one, create one.
+4. Drop your ["userChrome.css"](https://raw.githubusercontent.com/CodeCadim/ZenFox/main/themes/userChrome.css) file (from themes folder) into the "chrome" folder.
+5. Finally, restart Firefox for changes to take effect. Your customizations should now be live!
 
 # Uninstall
 
