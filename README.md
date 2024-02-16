@@ -1,31 +1,34 @@
-![logo](assets/zenfox-repository-open-graph.png)
+
+![ZenFox Badge](assets/zenfox-repository-open-graph.png)
 
 This is a fork of ArcFox intended to minimalism's lovers.
-Expect less features, less buttons and less functionnalities.
+Expect fewer features, fewer buttons and fewer functionalities.
 
-If you prefer the original that aims to ressemble Arc Browser, project is here : https://github.com/betterbrowser/arcfox
+![ZenFox Screenshot](assets/zenfox-screenshot.png)
+
+If you prefer the original that aims to resemble Arc Browser, project is here : https://github.com/betterbrowser/arcfox
 
 # Installation
 
 ## Install Add-On
 
-Use the official <a href="https://addons.mozilla.org/firefox/addon/zenfox/">Firefox Add-Ons</a> store.
+Use the official [Firefox Add-Ons store](https://addons.mozilla.org/firefox/addon/zenfox/).
 
 ## Install theme
 
-For an immersive experience, you need to add a userChrome style in your Firefox profile.
+For a fully immersive browsing experience, you'll want to incorporate a userChrome style into your Firefox profile.
 
-Open your firefox configurations and turn style modification on by following this steps :
+To enable style modifications, simply follow these steps:
 
-- Open <a href="about:config">"about:config"</a> on firefox (or type it in your address bar and click enter).
-- On the search bar, search for "toolkit.legacyUserProfileCustomizations.stylesheets" and set the value to "true".
+-    Open Firefox and type about:config into the search bar.
+-    Locate "toolkit.legacyUserProfileCustomizations.stylesheets" and set its value to "true".
 
-Now we'll add the userChrome in the right folder :
+Next, let's integrate the userChrome file into the appropriate directory:
 
-- Open <a href="about:support">"about:support"</a> and click on the “Open Folder” button on the right of "Profile Folder" to open it.
-- When the folder opens, search for a folder called "chrome", if you don't find it create one.
-- Inside the "chrome" folder, drop the "userChrome.css" file (from theme folder).
-- Restart firefox.
+-    Type about:support into the Firefox search bar and click on the "Open Folder" button next to "Profile Folder".
+-    If you don't already have a folder named "chrome" within the profile folder, create one.
+-    Within the "chrome" folder, place the "userChrome.css" file (found in the theme folder).
+-    Restart Firefox to apply the changes.
 
 # Uninstall
 
@@ -41,4 +44,4 @@ Support ArcFox and BetterBrowser in a financial way : donate to the developer [k
 
 # License
 
-ZenFox is based on Arcfox so it is also distributed under [MIT License](/LICENSE).
+ZenFox is based on Arcfox, so it is also distributed under [MIT License](./LICENSE).
