@@ -33,8 +33,6 @@ setting up your userChrome style :
 
 # Donate to the original project
 
-# Donate to the original project
-
 Support ArcFox and BetterBrowser in a financial way : donate to the developer [ko-fi](https://ko-fi.com/nikollesan) page
 
 # License
