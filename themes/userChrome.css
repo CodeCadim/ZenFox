@@ -48,6 +48,10 @@
   transition: height 200ms ease-in-out, opacity 175ms ease-in-out;
 }
 
+#urlbar-container {
+  visibility: var(--is-bar-visible);
+}
+
 #navigator-toolbox {
   position: fixed;
   z-index: 1;
@@ -55,7 +59,7 @@
   overflow: var(--is-bar-visible);
   right: 0;
   top: 0;
-  width: calc(100% - 310px);
+  width: 100%;
   background-color: transparent !important;
 }
 
