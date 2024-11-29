@@ -1,107 +1,26 @@
-#appcontent
-  > #tabbrowser-tabbox
-  > #tabbrowser-tabpanels
-  > .deck-selected
-  > .browserContainer
-  > .browserStack
-  > browser {
-  border-radius: 10px !important;
-  margin: 10px !important;
+/* Hide Sidebar header */
+
+#sidebar-header {
+  visibility: collapse !important;
 }
 
-.browserStack {
-	background: #3b3f52;
-}
+/* Hide Navigation Bar */
 
-.browserContainer {
-  background-color: var(
-    --lwt-accent-color-inactive,
-    var(--lwt-accent-color)
-  ) !important;
-  background-image: var(--lwt-header-image), var(--lwt-additional-images) !important;
-  background-repeat: no-repeat, var(--lwt-background-tiling) !important;
-  background-position: right top, var(--lwt-background-alignment) !important;
-}
-
-#titlebar {
-  display: none !important;
-}
-
-.titlebar-buttonbox-container {
-  display: none !important;
-}
-
-#forward-button,
-#back-button,
-#reload-button {
-  display: none !important;
-}
-
-#sidebar-button {
-  margin-left: 10px !important;
-}
-
-#navigator-toolbox:not(:hover) {
-  --is-bar-visible: hidden;
-  opacity: 0 !important;
-  height: 15px;
-  transition: height 200ms ease-in-out, opacity 175ms ease-in-out;
-}
-
-#urlbar-container {
-  visibility: var(--is-bar-visible);
+#TabsToolbar {
+  visibility: collapse !important;
 }
 
 #navigator-toolbox {
-  position: fixed;
-  z-index: 1;
-  height: 10px;
-  overflow: var(--is-bar-visible);
-  right: 0;
-  top: 0;
-  width: 100%;
-  background-color: transparent !important;
+	margin-top: -40px;
+	transition: margin-top 0.5s;
 }
 
-#navigator-toolbox:hover {
-  height: 40px;
-  opacity: 1 !important;
-  transition: opacity 175ms ease-in-out;
+#navigator-toolbox:hover, #navigator-toolbox:focus-within {
+	margin-top: 0px;
+	transition: margin-top 0.5s;
 }
 
-#navigator-toolbox:focus-within {
-  height: 40px;
-  opacity: 1 !important;
-  transition: opacity 175ms ease-in-out;
-  --is-bar-visible: visible;
-}
+/* Hide scrollbar */
 
-#nav-bar {
-  background-color: #3b3f52 !important;
-}
+*{ scrollbar-width: none !important }
 
-#urlbar-background {
-  background-color: #323446 !important;
-}
-
-toolbarbutton[open="true"] {
-  --is-bar-visible: visible !important;
-}
-
-#sidebar-header {
-   display: none;
-}
-
-#sidebar-box {
-  min-width: 300px !important;
-  max-width: 300px !important;
-  min-height: unset !important;
-  max-height: unset !important;
-  border-right: none !important;
-}
-
-#sidebar-splitter {
-  background-color: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-}
