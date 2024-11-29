@@ -4,6 +4,12 @@
   visibility: collapse !important;
 }
 
+/* Hide Personnal toolbar */
+
+#PersonalToolbar {
+  visibility: collapse !important;
+}
+
 /* Hide Navigation Bar */
 
 #TabsToolbar {
