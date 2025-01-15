@@ -8,7 +8,7 @@ body {
   height: 100%;
   background-color: #3b3f52;
   box-shadow: 2px 0 4px rgba(0, 0, 0, 0.3);
-  padding-left: 10px;
+  padding: 4px;
 }
 
 .controls {
@@ -23,6 +23,10 @@ body {
   background-color: transparent;
   padding: 1rem;
   margin: 0;
+}
+
+.controls .browser-control button {
+  cursor: pointer;
 }
 
 button {
@@ -40,8 +44,8 @@ input {
   flex-direction: row;
   align-items: center;
   gap: 10px;
-  padding: 15px;
-  border-radius: 15px;
+  padding: 10px;
+  border-radius: 10px;
   background: #323446;
   width: 100%;
 }
@@ -53,7 +57,8 @@ input {
   flex-direction: row;
   margin: 10px 0;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .tab.active {
@@ -98,14 +103,6 @@ input {
   -ms-user-select: none;
 }
 
-
-.folder {
-  background: lightgray;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid black;
-}
-
 .hidden {
   display: none;
 }
@@ -119,7 +116,3 @@ input {
   animation: spin 1s linear infinite;
 }
 
-#folder-container {
-  background-color: lightgray;
-  min-height: 100px;
-}

@@ -10,7 +10,6 @@
     <script defer src="models/browser-control.js"></script>
     <script defer src="models/search.js"></script>
     <script defer src="models/tabs.js"></script>
-    <script defer src="models/folder.js"></script>
     <script defer src="models/dragging.js"></script>
 </head>
 <body>
@@ -26,24 +25,12 @@
     <input id="search-bar">
 </div>
 <div id="space-name" class="hidden">Elgem</div>
-<div id="folder-container" class="hidden"></div>
 <div id="tab-list"></div>
 <template id="tab-template">
     <div class="tab" title="" data-id="" data-windowId="">
         <div class="infos">
             <img class="icon" draggable="false">
             <div data-type="name" class="name"></div>
-        </div>
-    </div>
-</template>
-<template id="folder-template">
-    <div class="folder" draggable="true">
-        <div class="folder-header">
-            <img class="icon">
-            <div data-type="name" class="name"></div>
-        </div>
-        <div class="folder-content hidden">
-
         </div>
     </div>
 </template>
