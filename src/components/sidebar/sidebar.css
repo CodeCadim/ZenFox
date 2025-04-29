@@ -1,118 +1,124 @@
 * {
-  border: 0;
-  padding: 0;
-  box-sizing: border-box;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  height: 100%;
-  background-color: #3b3f52;
-  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.3);
-  padding: 4px;
+	height: 100%;
+	background-color: #3b3f52;
+	box-shadow: 2px 0 4px rgba(0, 0, 0, 0.3);
+	padding: 4px;
 }
 
 .controls {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: transparent;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background: transparent;
 }
 
-.controls .logo, .controls .browser-control button {
-  color: white;
-  background-color: transparent;
-  padding: 1rem;
-  margin: 0;
+.controls .logo,
+.controls .browser-control button {
+	color: white;
+	background-color: transparent;
+	padding: 1rem;
+	margin: 0;
 }
 
 .controls .browser-control button {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 button {
-  padding: 5px;
+	padding: 5px;
 }
 
 input {
-  width: 100%;
-  height: 30px;
+	width: 100%;
+	height: 30px;
 }
 
 #search-bar {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  background: #323446;
-  width: 100%;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	background: #323446;
+	width: 100%;
+	font-size: 10px;
 }
 
 .tab {
-  display: flex;
-  color: #fff;
-  justify-content: space-between;
-  flex-direction: row;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
+	display: flex;
+	color: #fff;
+	justify-content: space-between;
+	flex-direction: row;
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 .tab.active {
-  background-color: #5e5f71;
+	background-color: #5e5f71;
 }
 
-.tab > .infos {
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
+.tab>.infos {
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
 }
 
-.tab > .infos > .name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.tab>.infos>.name {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
-.tab > .infos > .name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.tab>.infos>.name {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .tab .icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
 }
 
-.tab .close{
-  padding: 5px;
+.tab .close {
+	padding: 5px;
 }
 
-[draggable="true"] > * {
-  /*
+[draggable="true"]>* {
+	/*
    To prevent user selecting inside the drag source
   */
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
 
 .hidden {
-  display: none;
+	display: none;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .loading {
-  animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
 }
-
