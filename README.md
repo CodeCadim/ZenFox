@@ -17,8 +17,8 @@ To get started with customizing your Firefox experience, you need to enable some
 into the search bar of Firefox and set the value for "toolkit.legacyUserProfileCustomizations.stylesheets" to true. After that, we'll move on to
 setting up your userChrome style :
 
-1. Open your Firefox configurations by searching for "about:support".
-2. Click on the "Open Folder" button next to "Profile Folder" to open it.
+1. Open your Firefox profiles configuration by searching for "about:profiles".
+2. Look for your actual profile and click on the "Open Directory" button next to "Root Directory" to open it.
 3. In this folder, look for a folder named "chrome". If you don't find one, create one.
 4. Drop your ["userChrome.css"](https://raw.githubusercontent.com/CodeCadim/ZenFox/main/themes/userChrome.css) file (from themes folder) into the "chrome" folder.
 5. Finally, restart Firefox for changes to take effect. Your customizations should now be live!
