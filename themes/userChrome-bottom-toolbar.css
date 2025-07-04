@@ -1,0 +1,39 @@
+/* Hide Sidebar header */
+
+#sidebar-header {
+	visibility: collapse !important;
+}
+
+/* Hide Personnal toolbar */
+
+#PersonalToolbar {
+	visibility: collapse !important;
+}
+
+/* Hide Navigation Bar */
+
+#TabsToolbar {
+	visibility: collapse !important;
+}
+
+#navigator-toolbox {
+	display: block !important;
+	position: absolute !important;
+	bottom: 0px !important;
+	z-index: 9999 !important;
+	width: 100vw !important;
+	margin-bottom: -40px !important;
+	transition: margin-top 0.5s;
+}
+
+#navigator-toolbox:hover,
+#navigator-toolbox:focus-within {
+	margin-bottom: 0px !important;
+	transition: margin-top 0.5s;
+}
+
+/* Hide scrollbar */
+
+* {
+	scrollbar-width: none !important
+}
