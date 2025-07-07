@@ -22,8 +22,15 @@
 	bottom: 0px !important;
 	z-index: 9999 !important;
 	width: 100vw !important;
-	margin-bottom: -40px !important;
+	margin-bottom: -38px !important;
 	transition: margin-top 0.5s;
+}
+
+/* Hide Search Switcher */
+#urlbar-searchmode-switcher {
+	#urlbar:not([unifiedsearchbutton-available])>.urlbar-input-container>& {
+		display: none !important;
+	}
 }
 
 #navigator-toolbox:hover,
